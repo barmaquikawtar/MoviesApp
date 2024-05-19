@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/ra"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#FFFFFF"
+    android:orientation="vertical"
+
+    tools:context=".Activities.ListItemActivity">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="229dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginBottom="15dp"
+        android:animateLayoutChanges="true"
+        android:clickable="true"
+        app:cardBackgroundColor="#FFFFFF"
+        app:cardCornerRadius="10dp"
+        app:cardElevation="15dp"
+        app:contentPaddingBottom="20dp"
+        app:contentPaddingLeft="15dp"
+        app:contentPaddingRight="15dp"
+        app:contentPaddingTop="20dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/card_image"
+                android:layout_width="280dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:elevation="50dp"
+                android:rotation="0"
+                app:srcCompat="@drawable/poster1" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:layout_weight="1"
+                android:clipToPadding="false"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/card_title"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="3dp"
+                    android:fontFamily="@font/archivo_black"
+                    android:text="Dark knight "
+                    android:textColor="#393838"
+                    android:textSize="25sp" />
+
+                <TextView
+                    android:id="@+id/card_type"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0"
+                    android:text="Drama , Action"
+                    android:textColor="#6A6767"
+                    android:textSize="18sp" />
+
+                <Button
+                    android:id="@+id/card_duration"
+                    android:layout_width="55dp"
+                    android:layout_height="18dp"
+                    android:layout_marginTop="10dp"
+
+                    android:layout_marginBottom="10dp"
+                    android:background="@drawable/button"
+                    android:fontFamily="sans-serif"
+                    android:text="120 min"
+                    android:textColor="#FFFFFF"
+                    android:textSize="10sp"
+                    android:topRightRadius="1000dp" />
+
+                <TextView
+                    android:id="@+id/card_desc"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="this is batmaaaan batman batman and jocker fightin"
+                    android:textColor="#6A6767"
+                    android:textSize="11sp" />
+
+                <RatingBar
+                    android:id="@+id/card_rating"
+                    style="@style/Widget.AppCompat.RatingBar.Small"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="end"
+                    android:layout_marginRight="10dp"
+                    android:numStars="5"
+                    android:progressBackgroundTint="@color/golden_cold"
+                    android:progressTint="@color/golden"
+                    android:stepSize="0.1" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+</FrameLayout>
